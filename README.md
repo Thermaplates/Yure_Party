@@ -74,10 +74,9 @@ Pemain diajak mengarungi petualangan di sebuah wilayah di mana batas antara alam
 
 | Karakter | Peran | Profil Suara | Deskripsi Singkat |
 | :--- | :--- | :--- | :--- |
-| **Pethogs** | Protagonis Utama | `mid` (320 Hz) | Petualang tangguh bermental stabil yang menjadi poros kelompok di tengah anomali gaib desa Yure. |
-| **Saki** | Spirit Companion | `cute` (780 Hz) | Arwah gadis penasaran yang ceria dan usil. Selalu melayang dengan efek fisika roh (*ghost float*). |
-| **Nia & Modeus** | Anggota Party | `cute` (780 Hz) | Rekan dengan pengetahuan supranatural dan sihir pendukung yang ekspresif. |
-| **Mbah Karso** | Pedagang Keramat | `deep` (110 Hz) | Kakek misterius penjual benda-benda antik dan ramuan gaib yang menggelar lapak lesehan malam hari. |
+| **Nia** | Protagonis Utama | `mid` (320 Hz) | Gadis ceria dan berisik dalam party. |
+| **Sophia** | Tsundere Master of Electric Wind Ghost Technique | `cute` (780 Hz) | Arwah gadis Tsundere yang Tsundere :v  (*ghost float*). |
+| **Saki** | BIG Ghost in the world | `cute` (780 Hz) | Arwah gadis yang sangat lemas tapi memiliki daya tahan BESAR. |
 
 ---
 
