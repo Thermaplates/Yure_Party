@@ -1,7 +1,7 @@
 #  Yure Party — Cute Supernatural Psychological  RPG
 
 <p align="center">
-  <img src="img/pethog2.png" alt="Yure Party Logo" width="128" height="128" style="border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+  <img src="system/pethog2.png" alt="Yure Party Logo" width="128" height="128" style="border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
 </p>
 
 <p align="center">
