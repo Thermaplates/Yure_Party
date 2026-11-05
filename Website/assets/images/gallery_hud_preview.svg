@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hudBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051412" />
+      <stop offset="100%" stop-color="#0b2420" />
+    </linearGradient>
+    <linearGradient id="hpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="mpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="tpGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" rx="12" fill="url(#hudBg)" />
+
+  <!-- Grid overlay -->
+  <g stroke="#0f3d35" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="100" x2="600" y2="100" />
+    <line x1="0" y1="200" x2="600" y2="200" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="200" y1="0" x2="200" y2="380" />
+    <line x1="400" y1="0" x2="400" y2="380" />
+  </g>
+
+  <!-- Battle Scene Simulation -->
+  <rect x="50" y="40" width="500" height="180" rx="8" fill="#021a16" stroke="#059669" stroke-width="2" />
+  <!-- Enemy Silhouettes -->
+  <circle cx="160" cy="110" r="28" fill="#ec4899" opacity="0.7" />
+  <circle cx="440" cy="100" r="32" fill="#8b5cf6" opacity="0.7" />
+  <circle cx="300" cy="90" r="40" fill="#3b82f6" opacity="0.8" />
+  <text x="300" y="95" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="900" font-size="14" fill="#ffffff">BOSS: PHANTOM LORD</text>
+
+  <!-- Actor 1 HUD Card -->
+  <g transform="translate(60, 240)">
+    <rect width="220" height="120" rx="8" fill="#061c16" stroke="#10b981" stroke-width="2" />
+    <circle cx="40" cy="40" r="24" fill="#047857" stroke="#34d399" stroke-width="2" />
+    <text x="40" y="45" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" fill="#ffffff">NIA</text>
+    <text x="75" y="32" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#a7f3d0">LV 42</text>
+    <!-- HP Bar -->
+    <text x="75" y="55" font-family="'Outfit', sans-serif" font-size="10" fill="#cbd5e1">HP 3840 / 4200</text>
+    <rect x="75" y="60" width="130" height="8" rx="4" fill="#064e3b" />
+    <rect x="75" y="60" width="115" height="8" rx="4" fill="url(#hpGrad)" />
+    <!-- MP Bar -->
+    <rect x="75" y="75" width="130" height="6" rx="3" fill="#0c4a6e" />
+    <rect x="75" y="75" width="95" height="6" rx="3" fill="url(#mpGrad)" />
+    <!-- TP Bar -->
+    <rect x="75" y="87" width="130" height="6" rx="3" fill="#78350f" />
+    <rect x="75" y="87" width="120" height="6" rx="3" fill="url(#tpGrad)" />
+  </g>
+
+  <!-- Actor 2 HUD Card -->
+  <g transform="translate(320, 240)">
+    <rect width="220" height="120" rx="8" fill="#061c16" stroke="#10b981" stroke-width="2" />
+    <circle cx="40" cy="40" r="24" fill="#047857" stroke="#34d399" stroke-width="2" />
+    <text x="40" y="45" text-anchor="middle" font-family="'Outfit', sans-serif" font-weight="700" font-size="12" fill="#ffffff">REN</text>
+    <text x="75" y="32" font-family="'Outfit', sans-serif" font-weight="700" font-size="14" fill="#a7f3d0">LV 40</text>
+    <!-- HP Bar -->
+    <text x="75" y="55" font-family="'Outfit', sans-serif" font-size="10" fill="#cbd5e1">HP 2950 / 3100</text>
+    <rect x="75" y="60" width="130" height="8" rx="4" fill="#064e3b" />
+    <rect x="75" y="60" width="122" height="8" rx="4" fill="url(#hpGrad)" />
+    <!-- MP Bar -->
+    <rect x="75" y="75" width="130" height="6" rx="3" fill="#0c4a6e" />
+    <rect x="75" y="75" width="110" height="6" rx="3" fill="url(#mpGrad)" />
+    <!-- TP Bar -->
+    <rect x="75" y="87" width="130" height="6" rx="3" fill="#78350f" />
+    <rect x="75" y="87" width="60" height="6" rx="3" fill="url(#tpGrad)" />
+  </g>
+
+  <!-- Caption overlay -->
+  <rect x="0" y="380" width="600" height="70" fill="black" opacity="0.75" />
+  <text x="30" y="410" font-family="'Outfit', sans-serif" font-weight="700" font-size="17" fill="#ffffff">Actor HUD & In-Battle System UI</text>
+  <text x="30" y="432" font-family="'Outfit', sans-serif" font-size="13" fill="#6ee7b7">Asset Art by oonori · Logic Script by Archelino</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="charBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#180c1f" />
+      <stop offset="100%" stop-color="#2d123b" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" rx="12" fill="url(#charBg)" />
+  
+  <!-- Sketch Grid Lines -->
+  <line x1="150" y1="40" x2="150" y2="380" stroke="#4a1d59" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="300" y1="40" x2="300" y2="380" stroke="#4a1d59" stroke-width="1" stroke-dasharray="4,4" />
+  <line x1="450" y1="40" x2="450" y2="380" stroke="#4a1d59" stroke-width="1" stroke-dasharray="4,4" />
+  
+  <!-- Front Pose -->
+  <g transform="translate(150, 80)">
+    <!-- Head -->
+    <circle cx="0" cy="40" r="28" fill="#fdf2f8" stroke="#ec4899" stroke-width="2" />
+    <!-- Gothic Hair -->
+    <path d="M-30,35 C-30,5 30,5 30,35 C35,65 30,100 25,120 C20,95 10,65 0,65 C-10,65 -20,95 -25,120 C-30,100 -35,65 -30,35 Z" fill="#3b0764" />
+    <!-- Dress / Outfit -->
+    <path d="M-18,70 L18,70 L28,180 L-28,180 Z" fill="#1e1028" stroke="#ec4899" stroke-width="2" />
+    <path d="M-28,180 Q0,210 28,180 L20,230 L-20,230 Z" fill="#0f0714" stroke="#d946ef" stroke-width="1.5" />
+    <!-- Eyes -->
+    <ellipse cx="-10" cy="38" rx="4" ry="5" fill="#a855f7" />
+    <ellipse cx="10" cy="38" rx="4" ry="5" fill="#a855f7" />
+    <text x="0" y="270" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="12" fill="#f472b6">POSE: FRONT</text>
+  </g>
+
+  <!-- Side Pose -->
+  <g transform="translate(300, 80)">
+    <circle cx="0" cy="40" r="28" fill="#fdf2f8" stroke="#ec4899" stroke-width="2" />
+    <path d="M-20,30 C-20,5 25,10 25,35 C30,70 10,130 5,140" fill="#3b0764" />
+    <path d="M-12,70 L14,70 L20,180 L-10,180 Z" fill="#1e1028" stroke="#ec4899" stroke-width="2" />
+    <ellipse cx="14" cy="38" rx="3" ry="5" fill="#a855f7" />
+    <text x="0" y="270" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="12" fill="#f472b6">POSE: PROFILE</text>
+  </g>
+
+  <!-- Color Palette Swatches -->
+  <g transform="translate(420, 100)">
+    <text x="30" y="20" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#fbcfe8">COLOR PALETTE</text>
+    <rect x="30" y="35" width="28" height="28" rx="4" fill="#3b0764" stroke="#ec4899" />
+    <rect x="65" y="35" width="28" height="28" rx="4" fill="#ec4899" />
+    <rect x="100" y="35" width="28" height="28" rx="4" fill="#a855f7" />
+    <rect x="30" y="70" width="28" height="28" rx="4" fill="#fdf2f8" />
+    <rect x="65" y="70" width="28" height="28" rx="4" fill="#1e1028" />
+    <rect x="100" y="70" width="28" height="28" rx="4" fill="#fbbf24" />
+
+    <text x="30" y="130" font-family="'Outfit', sans-serif" font-size="11" fill="#cbd5e1">Character: Nia</text>
+    <text x="30" y="150" font-family="'Outfit', sans-serif" font-size="11" fill="#94a3b8">Role: Protagonist</text>
+    <text x="30" y="170" font-family="'Outfit', sans-serif" font-size="11" fill="#94a3b8">Style: Gothic Lolita / Dark</text>
+  </g>
+
+  <!-- Caption overlay -->
+  <rect x="0" y="380" width="600" height="70" fill="black" opacity="0.75" />
+  <text x="30" y="410" font-family="'Outfit', sans-serif" font-weight="700" font-size="17" fill="#ffffff">Character Design Sheet: Nia</text>
+  <text x="30" y="432" font-family="'Outfit', sans-serif" font-size="13" fill="#f472b6">Art Direction by Coby novaenan</text>
+</svg>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MidiSuno Studio 4.5 - AI Music & BGM Generator (.ogg / .m4a / .mid)</title>
+    <meta name="description" content="Aplikasi studio lokal pembuat lagu sendiri bergaya Suno v4.5 dengan Style Cloner, Composer DNA, dan ekspor OGG/M4A/MIDI untuk RPG Maker dan DAW">
+    
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="header-inner">
+            <a href="#" class="brand" id="brandLink">
+                <div class="brand-icon">🎹</div>
+                <div class="brand-info">
+                    <h1>MidiSuno Studio <span class="version-tag">v4.5 PRO</span></h1>
+                    <p>AI Music Generator & RPG Maker BGM Studio</p>
+                </div>
+            </a>
+
+            <!-- Status Badges -->
+            <div class="header-badges">
+                <div class="badge" id="badgeStatus">
+                    <span class="status-dot"></span> Ready
+                </div>
+                <div class="badge highlight" id="badgeBpm">146 BPM</div>
+                <div class="badge highlight" id="badgeKey">D MINOR</div>
+                <div class="badge" id="badgeDuration">00:52</div>
+            </div>
+
+            <!-- Quick Action Buttons -->
+            <div class="header-actions">
+                <button class="btn btn-secondary" id="btnExportOgg" title="Export File Audio .OGG (RPG Maker PC)">
+                    🎵 Export .OGG
+                </button>
+                <button class="btn btn-secondary" id="btnExportM4a" title="Export File Audio .M4A (RPG Maker Mobile)">
+                    🎧 Export .M4A
+                </button>
+                <button class="btn btn-secondary" id="btnDownloadMidi" title="Download Standard MIDI (.mid)">
+                    💾 .MID
+                </button>
+                <button class="btn btn-success" id="btnSaveGame" title="Render dan simpan langsung OGG + M4A + MID ke folder audio/bgm/ game">
+                    🎮 Save to Game BGM
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Hero Prompt Section (Suno v4.5 Experience) -->
+        <section class="prompt-hero">
+            <div class="prompt-header">
+                <div class="prompt-title">
+                    <span>✨</span> Buat Lagu AI Baru (Prompt to Music - Suno v4.5)
+                </div>
+                <div class="prompt-actions-top">
+                    <!-- Song Filename Input -->
+                    <div class="song-name-wrapper">
+                        <label for="inputSongName">Nama BGM:</label>
+                        <input type="text" id="inputSongName" class="input-song-name" value="Nobuo_Boss_DMin" placeholder="Nama file (contoh: Town_Theme)">
+                    </div>
+                    <button class="btn btn-secondary btn-icon" id="btnRandom" title="Surprise Me (Acak Prompt)">
+                        🎲
+                    </button>
+                </div>
+            </div>
+
+            <div class="prompt-input-wrapper">
+                <textarea 
+                    id="promptInput" 
+                    class="prompt-textarea" 
+                    placeholder="Deskripsikan lagumu di sini... Contoh: 'Nobuo Uematsu epic orchestral battle with brass fanfare and fast string runs' atau 'Shoji Meguro Persona 5 acid jazz with tenor sax and slap bass' atau 'Joe Hisaishi Ghibli emotional piano waltz'"
+                >Nobuo Uematsu epic dramatic battle with heroic brass fanfare, driving orchestral timpani, and fast spiccato strings in D minor</textarea>
+
+                <div class="prompt-bottom-bar">
+                    <!-- Preset Badges: Iconic Composer DNA & Styles -->
+                    <div class="preset-tags" id="presetTagsContainer">
+                        <!-- Composer DNA -->
+                        <span class="preset-tag active" data-preset="dna_uematsu" data-prompt="Nobuo Uematsu Final Fantasy epic dramatic battle with brass fanfare and string runs">🗡️ Nobuo Uematsu (FF)</span>
+                        <span class="preset-tag" data-preset="dna_persona" data-prompt="Shoji Meguro Persona 5 acid jazz funk with tenor saxophone solo and slap bass">🎭 Persona 5 (Acid Jazz)</span>
+                        <span class="preset-tag" data-preset="dna_tobyfox" data-prompt="Toby Fox Undertale battle theme with overdrive guitar, driving 16th bass, and rock kit">💀 Toby Fox (Undertale)</span>
+                        <span class="preset-tag" data-preset="dna_ghibli" data-prompt="Joe Hisaishi Studio Ghibli emotional acoustic piano and concert flute waltz">🍃 Joe Hisaishi (Ghibli)</span>
+                        <span class="preset-tag" data-preset="dna_genshin" data-prompt="Yu-Peng Chen Genshin Impact asian orchestral fusion with shakuhachi and koto">⛩️ Genshin (Asian Fusion)</span>
+                        <span class="preset-tag" data-preset="dna_nier" data-prompt="Keiichi Okabe NieR Automata haunting acoustic guitar and crystal celtic harp">🌌 NieR: Automata</span>
+                        <span class="preset-tag" data-preset="dna_touhou" data-prompt="ZUN Touhou romantic fast trumpet lead with cascading piano arpeggios">🎺 ZUN (Touhou)</span>
+                        <span class="preset-tag" data-preset="dna_mitsuda" data-prompt="Yasunori Mitsuda Chrono Celtic folk with wooden recorder and renaissance lute">⏳ Yasunori Mitsuda</span>
+
+                        <!-- Additional Genres -->
+                        <span class="preset-tag" data-preset="jazz_swing" data-prompt="Smooth jazz swing with tenor saxophone melody, walking upright bass, and jazzy piano">🎷 Jazz Swing</span>
+                        <span class="preset-tag" data-preset="bossanova" data-prompt="Warm bossa nova latin with nylon acoustic guitar, mellow flute, and shaker percussion">🏖️ Bossa Nova</span>
+                        <span class="preset-tag" data-preset="medieval" data-prompt="Medieval fantasy tavern folk with acoustic lute, wooden pipe recorder, and celtic harp">🏰 Medieval Folk</span>
+                        <span class="preset-tag" data-preset="gothic_organ" data-prompt="Gothic cathedral pipe organ with dark strings, harpsichord, and dramatic timpani">⛪ Gothic Organ</span>
+                        <span class="preset-tag" data-preset="metal_rock" data-prompt="Heavy battle metal with fast overdriven guitar riffs, distorted bass, and double kick drums">⚡ Battle Metal</span>
+                    </div>
+
+                    <!-- Generate Button -->
+                    <button class="btn btn-generate" id="btnGenerate">
+                        ⚡ Generate Suno v4.5
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reference Song / MIDI Style Cloner Section -->
+        <section class="cloner-section">
+            <div class="cloner-card">
+                <div class="cloner-header">
+                    <div class="cloner-title">
+                        <span>🧬</span> <strong>Style Cloner:</strong> Tiru Instrumen & Terinspirasi dari Lagu Lain (.MID)
+                    </div>
+                    <span class="cloner-badge">Suno v4.5 Reference Engine</span>
+                </div>
+                <div class="cloner-body">
+                    <div class="dropzone" id="midiDropzone">
+                        <input type="file" id="fileMidiInput" accept=".mid,.midi" style="display: none;">
+                        <div class="dropzone-content">
+                            <span class="dropzone-icon">📥</span>
+                            <span class="dropzone-text"><strong>Drag & Drop</strong> file <code>.mid</code> lagu apa saja ke sini, atau <button type="button" class="btn btn-secondary btn-sm" id="btnBrowseMidi">Pilih File MIDI</button></span>
+                            <span class="dropzone-sub">Sistem akan mengekstrak BPM, tangga nada, instrumen, dan ritme lagu tersebut untuk menciptakan aransemen orisinal baru!</span>
+                        </div>
+                    </div>
+                    <div class="cloner-result" id="clonerResult" style="display: none;">
+                        <div class="cloner-stats">
+                            <div class="stat-item"><span class="stat-label">BPM:</span> <span id="dnaBpm">120</span></div>
+                            <div class="stat-item"><span class="stat-label">Tangga Nada:</span> <span id="dnaKey">D MINOR</span></div>
+                            <div class="stat-item"><span class="stat-label">Jumlah Track:</span> <span id="dnaTracks">4</span></div>
+                            <div class="stat-item"><span class="stat-label">Total Not:</span> <span id="dnaNotes">842</span></div>
+                        </div>
+                        <button class="btn btn-primary" id="btnCloneGenerate">
+                            ✨ Ciptakan Lagu Baru Terinspirasi dari MIDI Ini
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Internet Music Knowledge & Online MIDI Learner -->
+        <section class="knowledge-section">
+            <div class="knowledge-card">
+                <div class="knowledge-header">
+                    <div class="knowledge-title">
+                        <span>🌐</span> <strong>Internet Music Knowledge Base:</strong> Pelajari Ribuan Gaya Lagu & Web MIDI
+                    </div>
+                    <div class="knowledge-url-bar">
+                        <input type="url" id="inputWebMidiUrl" class="input-web-url" placeholder="Paste link URL file .mid dari internet (misal: https://.../song.mid)">
+                        <button class="btn btn-secondary" id="btnFetchWebMidi">
+                            📥 Download & Pelajari URL
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Category Filters & Search -->
+                <div class="knowledge-filters-row">
+                    <div class="knowledge-search-wrap">
+                        <input type="text" id="inputSearchKnowledge" class="input-search-kb" placeholder="🔍 Cari lagu internet (Zelda, Chopin, Persona, Evangelion, Daft Punk, Ipanema...)">
+                    </div>
+                    <div class="knowledge-cat-tags" id="knowledgeCatTags">
+                        <span class="kb-cat-tag active" data-cat="all">Semua (25+)</span>
+                        <span class="kb-cat-tag" data-cat="Game Soundtracks">Game Soundtracks</span>
+                        <span class="kb-cat-tag" data-cat="Classical Masterworks">Klasik</span>
+                        <span class="kb-cat-tag" data-cat="Anime & J-Pop">Anime & J-Pop</span>
+                        <span class="kb-cat-tag" data-cat="Jazz & Bossa Nova">Jazz & Bossa</span>
+                        <span class="kb-cat-tag" data-cat="Pop & Synthwave">Pop & Synth</span>
+                    </div>
+                </div>
+
+                <!-- Catalog Grid -->
+                <div class="knowledge-grid" id="knowledgeGrid">
+                    <!-- Populated dynamically by app.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Parameters Customization Bar -->
+        <section class="params-bar">
+            <!-- Key -->
+            <div class="param-group">
+                <div class="param-label">Root Key</div>
+                <select id="selectKey" class="param-control">
+                    <option value="C">C</option>
+                    <option value="C#">C# / Db</option>
+                    <option value="D" selected>D</option>
+                    <option value="Eb">Eb / D#</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="F#">F# / Gb</option>
+                    <option value="G">G</option>
+                    <option value="Ab">Ab / G#</option>
+                    <option value="A">A</option>
+                    <option value="Bb">Bb / A#</option>
+                    <option value="B">B</option>
+                </select>
+            </div>
+
+            <!-- Scale -->
+            <div class="param-group">
+                <div class="param-label">Scale / Mode</div>
+                <select id="selectScale" class="param-control">
+                    <option value="minor" selected>Natural Minor (Epic/Battle)</option>
+                    <option value="major">Major (Ionian / Heroic)</option>
+                    <option value="harmonic_minor">Harmonic Minor (Gothic)</option>
+                    <option value="dorian">Dorian (Jazz / Celtic)</option>
+                    <option value="phrygian">Phrygian (Metal / Spanish)</option>
+                    <option value="lydian">Lydian (Ethereal / Sci-Fi)</option>
+                    <option value="mixolydian">Mixolydian (Folk / Rock)</option>
+                    <option value="pentatonic_minor">Pentatonic Minor (Asian)</option>
+                    <option value="pentatonic_major">Pentatonic Major</option>
+                    <option value="blues">Blues Scale (Soulful)</option>
+                </select>
+            </div>
+
+            <!-- BPM -->
+            <div class="param-group">
+                <div class="param-label">
+                    <span>Tempo (BPM)</span>
+                    <span id="valBpm" class="param-val-badge">146 BPM</span>
+                </div>
+                <input type="range" id="sliderBpm" min="55" max="210" value="146">
+            </div>
+
+            <!-- Song Length -->
+            <div class="param-group">
+                <div class="param-label">Song Length</div>
+                <select id="selectBars" class="param-control">
+                    <option value="16">16 Bars (~30s)</option>
+                    <option value="32" selected>32 Bars (~1m)</option>
+                    <option value="48">48 Bars (~1m 30s)</option>
+                    <option value="64">64 Bars (~2m)</option>
+                </select>
+            </div>
+
+            <!-- RPG Seamless Loop -->
+            <div class="param-group">
+                <div class="param-label">RPG Maker Seamless Loop</div>
+                <label class="switch-label">
+                    <input type="checkbox" id="checkLoop" checked>
+                    <span>Auto Loop (CC 111 & OGG Tags)</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- Studio Grid: Piano Roll Visualizer + Sidebar -->
+        <section class="studio-grid">
+            
+            <!-- Arranger / Piano Roll -->
+            <div class="arranger-card">
+                <div class="arranger-header">
+                    <div class="arranger-title">
+                        <span>🎼</span> Multi-Track Piano Roll (Suno v4.5 Dynamics)
+                    </div>
+                    <div class="track-legend">
+                        <div class="legend-item"><span class="legend-dot legend-melody"></span> Melody</div>
+                        <div class="legend-item"><span class="legend-dot legend-harmony"></span> Chords</div>
+                        <div class="legend-item"><span class="legend-dot legend-bass"></span> Bass</div>
+                        <div class="legend-item"><span class="legend-dot legend-arp"></span> Arp</div>
+                        <div class="legend-item"><span class="legend-dot legend-drums"></span> Drums</div>
+                    </div>
+                </div>
+
+                <!-- Canvas Visualizer -->
+                <div class="canvas-wrapper" id="canvasWrapper">
+                    <canvas id="pianoRollCanvas"></canvas>
+                </div>
+
+                <div class="arranger-footer">
+                    <span id="currentBarLabel">Bar: 1 / 32</span>
+                    <span>Click anywhere on the Piano Roll to seek playback</span>
+                    <span id="totalBarsLabel">Bars: 32</span>
+                </div>
+            </div>
+
+            <!-- Sidebar: Mixer & Lyrics Tabs -->
+            <div class="sidebar-card">
+                <div class="tab-nav">
+                    <button class="tab-btn active" id="tabMixerBtn">🎚️ Track Instruments & Mixer</button>
+                    <button class="tab-btn" id="tabLyricsBtn">📝 Suno Lyrics</button>
+                </div>
+
+                <!-- Tab 1: Mixer with Instrument Selectors -->
+                <div class="tab-content" id="tabMixer">
+                    <div class="mixer-rack">
+                        <!-- Track 0: Melody -->
+                        <div class="mixer-strip track-0">
+                            <div class="strip-header">
+                                <span class="strip-name" id="trackName0">Lead Melody</span>
+                                <div class="strip-actions">
+                                    <button class="btn-mute" title="Mute Track">M</button>
+                                    <button class="btn-solo" title="Solo Track">S</button>
+                                </div>
+                            </div>
+                            <div class="strip-instrument-row">
+                                <select class="param-control track-inst-select" data-track="0">
+                                    <option value="brass">Fanfare Trumpet / Horn (Uematsu/Touhou)</option>
+                                    <option value="saxophone">Tenor Saxophone (Persona Jazz)</option>
+                                    <option value="flute">Concert Flute (Ghibli / Town)</option>
+                                    <option value="recorder">Wooden Pipe / Recorder (Celtic/Medieval)</option>
+                                    <option value="shakuhachi">Shakuhachi Flute (Genshin Asian)</option>
+                                    <option value="strings">Solo Violin (NieR / Dramatic)</option>
+                                    <option value="overdrive_guitar">Overdrive Solo Guitar (Undertale/Metal)</option>
+                                    <option value="lead_synth">Cyber Saw/Square Lead</option>
+                                    <option value="nylon_guitar">Spanish Classical Guitar</option>
+                                    <option value="pipe_organ">Cathedral Pipe Organ (Gothic)</option>
+                                    <option value="piano">Acoustic Piano</option>
+                                </select>
+                            </div>
+                            <div class="strip-fader-row">
+                                <input type="range" class="track-vol" min="0" max="1.5" step="0.05" value="1.0">
+                                <span class="strip-vol-val">100%</span>
+                            </div>
+                        </div>
+
+                        <!-- Track 1: Harmony -->
+                        <div class="mixer-strip track-1">
+                            <div class="strip-header">
+                                <span class="strip-name" id="trackName1">Chords & Harmony</span>
+                                <div class="strip-actions">
+                                    <button class="btn-mute" title="Mute Track">M</button>
+                                    <button class="btn-solo" title="Solo Track">S</button>
+                                </div>
+                            </div>
+                            <div class="strip-instrument-row">
+                                <select class="param-control track-inst-select" data-track="1">
+                                    <option value="strings">Full String Ensemble</option>
+                                    <option value="piano">Acoustic Grand Piano</option>
+                                    <option value="rhodes">Rhodes EP (Persona / Lo-Fi / Bossa)</option>
+                                    <option value="brass">Brass Section Fanfare</option>
+                                    <option value="nylon_guitar">Acoustic Nylon Guitar (NieR/Bossa)</option>
+                                    <option value="lute">Renaissance Lute (Medieval/Celtic)</option>
+                                    <option value="harpsichord">Harpsichord (Baroque/Gothic)</option>
+                                    <option value="pipe_organ">Pipe Organ Chords</option>
+                                    <option value="koto">Koto Traditional Chords (Genshin)</option>
+                                    <option value="overdrive_guitar">Distortion Power Chords</option>
+                                </select>
+                            </div>
+                            <div class="strip-fader-row">
+                                <input type="range" class="track-vol" min="0" max="1.5" step="0.05" value="1.0">
+                                <span class="strip-vol-val">100%</span>
+                            </div>
+                        </div>
+
+                        <!-- Track 2: Bass -->
+                        <div class="mixer-strip track-2">
+                            <div class="strip-header">
+                                <span class="strip-name" id="trackName2">Bassline</span>
+                                <div class="strip-actions">
+                                    <button class="btn-mute" title="Mute Track">M</button>
+                                    <button class="btn-solo" title="Solo Track">S</button>
+                                </div>
+                            </div>
+                            <div class="strip-instrument-row">
+                                <select class="param-control track-inst-select" data-track="2">
+                                    <option value="bass_synth">Punchy Synth Sub Bass (Uematsu/Toby)</option>
+                                    <option value="slap_bass">Funk Slap Bass (Persona 5)</option>
+                                    <option value="upright_bass">Upright Acoustic Jazz/Cello Bass</option>
+                                    <option value="pipe_organ">Sub Pedal Pipe Organ</option>
+                                </select>
+                            </div>
+                            <div class="strip-fader-row">
+                                <input type="range" class="track-vol" min="0" max="1.5" step="0.05" value="1.0">
+                                <span class="strip-vol-val">100%</span>
+                            </div>
+                        </div>
+
+                        <!-- Track 3: Arp -->
+                        <div class="mixer-strip track-3">
+                            <div class="strip-header">
+                                <span class="strip-name" id="trackName3">Arpeggio & Accomp</span>
+                                <div class="strip-actions">
+                                    <button class="btn-mute" title="Mute Track">M</button>
+                                    <button class="btn-solo" title="Solo Track">S</button>
+                                </div>
+                            </div>
+                            <div class="strip-instrument-row">
+                                <select class="param-control track-inst-select" data-track="3">
+                                    <option value="strings">Fast Spiccato String Runs</option>
+                                    <option value="celtic_harp">Celtic Crystal Harp (NieR/Chrono)</option>
+                                    <option value="celesta">Celesta & Glockenspiel (Ghibli)</option>
+                                    <option value="koto">Koto / Shamisen Pluck (Genshin)</option>
+                                    <option value="vibraphone">Vibraphone Chimes (Jazz)</option>
+                                    <option value="harpsichord">Harpsichord Arpeggio</option>
+                                    <option value="lead_synth">Neon Chiptune Sweep</option>
+                                </select>
+                            </div>
+                            <div class="strip-fader-row">
+                                <input type="range" class="track-vol" min="0" max="1.5" step="0.05" value="1.0">
+                                <span class="strip-vol-val">100%</span>
+                            </div>
+                        </div>
+
+                        <!-- Track 4: Drums -->
+                        <div class="mixer-strip track-4">
+                            <div class="strip-header">
+                                <span class="strip-name" id="trackName4">Drums & Percussion</span>
+                                <div class="strip-actions">
+                                    <button class="btn-mute" title="Mute Track">M</button>
+                                    <button class="btn-solo" title="Solo Track">S</button>
+                                </div>
+                            </div>
+                            <div class="strip-instrument-row">
+                                <select class="param-control" id="selectDrumStyle">
+                                    <option value="battle">Epic Timpani & Military Snare (Uematsu)</option>
+                                    <option value="disco">Swung Funk Beat (Persona 5)</option>
+                                    <option value="metal">High-Octane Battle Rock (Toby Fox)</option>
+                                    <option value="oriental">Taiko Drums & Clackers (Genshin)</option>
+                                    <option value="ambient">Deep Cinematic Taiko Pulses (NieR)</option>
+                                    <option value="anime">High-Speed Anime Drum Beat (Touhou)</option>
+                                    <option value="medieval">Bodhran & Tambourine (Chrono/Folk)</option>
+                                    <option value="waltz">Gentle Orchestral Waltz (Ghibli)</option>
+                                    <option value="jazz_swing">Jazz Swing Brush & Ride</option>
+                                    <option value="bossanova">Bossa Nova Shaker & Clave</option>
+                                    <option value="lofi">Lo-Fi Swung Boom-Bap</option>
+                                    <option value="synthwave">80s Gated Synth Drums</option>
+                                </select>
+                            </div>
+                            <div class="strip-fader-row">
+                                <input type="range" class="track-vol" min="0" max="1.5" step="0.05" value="1.0">
+                                <span class="strip-vol-val">100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Lyrics -->
+                <div class="tab-content" id="tabLyrics" style="display: none;">
+                    <div class="lyrics-box" id="lyricsBox">
+                        Generate a song to view AI-generated lyrics and theme structure!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Fixed Bottom Transport Bar -->
+    <footer class="transport-bar">
+        <div class="transport-inner">
+            <!-- Transport Controls -->
+            <div class="transport-playback">
+                <button class="btn-play-hero" id="btnPlayHero" title="Play / Pause (Spacebar)">
+                    ▶
+                </button>
+                <button class="btn-stop" id="btnStop" title="Stop & Reset">
+                    ⏹
+                </button>
+                <div class="timecode">
+                    <span id="timecodeCurrent">00:00</span> / <span id="timecodeTotal">00:52</span>
+                </div>
+            </div>
+
+            <!-- Seek Slider -->
+            <div class="transport-progress">
+                <input type="range" id="seekProgress" min="0" max="100" value="0" step="0.1">
+            </div>
+
+            <!-- Master Volume -->
+            <div class="transport-master-vol">
+                <span>🔊</span>
+                <input type="range" id="masterVolume" min="0" max="1" step="0.05" value="0.85" title="Master Volume">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Export & Progress Modal -->
+    <div class="modal-overlay" id="renderModal">
+        <div class="modal-card">
+            <div class="modal-spinner"></div>
+            <h3 id="modalTitle">Rendering Audio (Suno v4.5)...</h3>
+            <p id="modalDesc">Generating 44.1kHz audio waveforms and converting to .OGG & .M4A...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="knowledge_base.js"></script>
+    <script src="midi_parser.js"></script>
+    <script src="midi_writer.js"></script>
+    <script src="music_engine.js"></script>
+    <script src="synth.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

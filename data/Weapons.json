@@ -1,0 +1,7 @@
+[
+null,
+{"id":1,"animationId":1,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0.7}],"iconIndex":5,"name":"Rage Soul","note":"<soul_img: Rage>","params":[120,0,270,15,0,15,0,0],"price":500,"wtypeId":2},
+{"id":2,"animationId":34,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":8,"value":0.7}],"iconIndex":27,"name":"Energy Soul","note":"<soul_img: energy>","params":[0,250,0,0,270,0,0,0],"price":500,"wtypeId":3},
+{"id":3,"animationId":63,"description":"","etypeId":1,"traits":[{"code":31,"dataId":10,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":7,"name":"Lust Soul","note":"<soul_img: soul_fire>","params":[250,20,150,50,120,50,0,0],"price":500,"wtypeId":3},
+{"id":4,"animationId":11,"description":"","etypeId":1,"traits":[{"code":31,"dataId":1,"value":0},{"code":22,"dataId":0,"value":0}],"iconIndex":102,"name":"Bow","note":"","params":[0,0,10,0,0,0,0,0],"price":500,"wtypeId":7}
+]

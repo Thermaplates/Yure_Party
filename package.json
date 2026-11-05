@@ -1,0 +1,23 @@
+{
+  "name": "YureParty",
+  "main": "index.html",
+  "js-flags": "--expose-gc",
+  "window": {
+    "position": "center",
+    "show": true,
+    "toolbar": false,
+    "icon": "icon/icon.png",
+    "width": 816,
+    "height": 624,
+    "min_width": 408,
+    "min_height": 312,
+    "max_width": null,
+    "max_height": null,
+    "title": "Yure Party",
+    "resizable": true,
+    "fullscreen": false,
+    "frame": true,
+    "always-on-top": false
+  },
+  "chromium-args": "--autoplay-policy=no-user-gesture-required --enable-logging --v=1"
+}

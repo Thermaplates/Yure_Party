@@ -1,0 +1,686 @@
+[
+  null,
+  {
+    "id": 1,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 500
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 176,
+    "itypeId": 1,
+    "name": "Potion",
+    "note": "",
+    "occasion": 0,
+    "price": 50,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 2,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 12,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 200
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 176,
+    "itypeId": 1,
+    "name": "Magic Water",
+    "note": "",
+    "occasion": 0,
+    "price": 100,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 3,
+    "animationId": 45,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 22,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 5,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 6,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 8,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 9,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 10,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 176,
+    "itypeId": 1,
+    "name": "Dispel Herb",
+    "note": "",
+    "occasion": 0,
+    "price": 200,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 4,
+    "animationId": 0,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 0,
+    "itypeId": 1,
+    "name": "",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 5,
+    "animationId": 52,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 13,
+        "dataId": 0,
+        "value1": 50,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 228,
+    "itypeId": 1,
+    "name": "Rage Poison",
+    "note": "",
+    "occasion": 0,
+    "price": 70,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 6,
+    "animationId": 0,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 2,
+    "itypeId": 1,
+    "name": "White And Sticky",
+    "note": "",
+    "occasion": 0,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 7,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "+ energy. Used to craft soul based skill (mob drop).",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 79,
+    "itypeId": 1,
+    "name": "Soul of the timid",
+    "note": "<karso soul: timid>",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 8,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "+25% Rage. Triggers accumulating post-battle Sanity penalty (x1.5/battle). Karso Shop.",
+    "effects": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value1": 1.25,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 0,
+    "itypeId": 1,
+    "name": "Adrenaline syringe",
+    "note": "<karso syringe><adrenaline_syringe><karso shop> <Item Icon: 0>",
+    "occasion": 0,
+    "price": 150,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 9,
+    "name": "Karso's powerful strength potion",
+    "iconIndex": 1,
+    "description": "+20% Damage fisik selama 5 giliran. Efek samping: Berisiko sakit perut diare.",
+    "note": "<karso potion: strength><karso shop> <Item Icon: 1>",
+    "price": 220,
+    "itypeId": 1,
+    "scope": 7,
+    "occasion": 0,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": [
+      {
+        "code": 31,
+        "dataId": 2,
+        "value1": 5,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 15,
+        "value1": 0.25,
+        "value2": 0
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Karso's powerful magic potion",
+    "iconIndex": 2,
+    "description": "+25% Pemulihan Energy (MP). Efek samping: Berisiko pusing kepala.",
+    "note": "<karso potion: magic><karso shop> <Item Icon: 2>",
+    "price": 200,
+    "itypeId": 1,
+    "scope": 7,
+    "occasion": 0,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": [
+      {
+        "code": 12,
+        "dataId": 0,
+        "value1": 0.25,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 16,
+        "value1": 0.25,
+        "value2": 0
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Karso's powerful green potion",
+    "iconIndex": 3,
+    "description": "+10% Pemulihan Sanity energi mental. Efek samping: Berisiko mual.",
+    "note": "<karso potion: sanity><karso shop> <Item Icon: 3>",
+    "price": 250,
+    "itypeId": 1,
+    "scope": 7,
+    "occasion": 0,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 17,
+        "value1": 0.2,
+        "value2": 0
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Suspicious rainbow potion",
+    "iconIndex": 4,
+    "description": "+15% HP, +15% MP, +15 TP, +10% Damage & buff acak. Efek samping berat jika berlebihan!",
+    "note": "<karso potion: rainbow><karso shop> <Item Icon: 4>",
+    "price": 400,
+    "itypeId": 1,
+    "scope": 7,
+    "occasion": 0,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.15,
+        "value2": 0
+      },
+      {
+        "code": 12,
+        "dataId": 0,
+        "value1": 0.15,
+        "value2": 0
+      },
+      {
+        "code": 13,
+        "dataId": 0,
+        "value1": 15,
+        "value2": 0
+      },
+      {
+        "code": 31,
+        "dataId": 2,
+        "value1": 4,
+        "value2": 0
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Buddha's hand fruit",
+    "iconIndex": 18,
+    "description": "Buah mistis tangan Buddha. Memberikan berkah peningkatan status acak sementara (+30%).",
+    "note": "<karso fruit><karso shop> <Item Icon: 18>",
+    "price": 180,
+    "itypeId": 1,
+    "scope": 7,
+    "occasion": 0,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": [
+      {
+        "code": 31,
+        "dataId": 2,
+        "value1": 5,
+        "value2": 0
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Incense stick",
+    "iconIndex": 19,
+    "description": "Dupa wangi keramat. Menenangkan hantu dan arwah agresif di sekitar selama 1 hari.",
+    "note": "<karso incense><karso shop> <Item Icon: 19>",
+    "price": 150,
+    "itypeId": 1,
+    "scope": 8,
+    "occasion": 0,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 20,
+        "value1": 1,
+        "value2": 0
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Rawa rontek stone",
+    "iconIndex": 17,
+    "description": "Batu aji legendaris Rawa Rontek. Membangkitkan rekan party yang tewas seketika dengan 17% HP.",
+    "note": "<karso rawa_rontek><karso shop> <Item Icon: 17>",
+    "price": 650,
+    "itypeId": 1,
+    "scope": 9,
+    "occasion": 0,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 49,
+    "consumable": true,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.17,
+        "value2": 0
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Semar mesem",
+    "iconIndex": 14,
+    "description": "Jimat pengasihan sakti. Digunakan untuk memikat dan memikat musuh dalam kebingungan (Fascination).",
+    "note": "<karso semar_mesem><karso shop> <Item Icon: 14>",
+    "price": 500,
+    "itypeId": 1,
+    "scope": 1,
+    "occasion": 1,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 2,
+    "consumable": true,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 9,
+        "value1": 0.85,
+        "value2": 0
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Soul of the brave",
+    "iconIndex": 5,
+    "description": "Jiwa keberanian murni. Material utama tempa skill rasi bintang (Drop musuh gaib).",
+    "note": "<karso soul: brave><karso shop> <Item Icon: 5>",
+    "price": 0,
+    "itypeId": 2,
+    "scope": 0,
+    "occasion": 3,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": false,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": []
+  },
+  {
+    "id": 18,
+    "name": "Soul of the sadness",
+    "iconIndex": 7,
+    "description": "Jiwa kesedihan mistis. Material utama tempa skill rasi bintang (Drop musuh gaib).",
+    "note": "<karso soul: sadness><karso shop> <Item Icon: 7>",
+    "price": 0,
+    "itypeId": 2,
+    "scope": 0,
+    "occasion": 3,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": false,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": []
+  },
+  {
+    "id": 19,
+    "name": "Soul of the Light",
+    "iconIndex": 8,
+    "description": "Pendaran jiwa cahaya suci. Material utama tempa skill rasi bintang (Drop musuh gaib).",
+    "note": "<karso soul: light><karso shop> <Item Icon: 8>",
+    "price": 0,
+    "itypeId": 2,
+    "scope": 0,
+    "occasion": 3,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": false,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": []
+  },
+  {
+    "id": 20,
+    "name": "Soul of Green",
+    "iconIndex": 9,
+    "description": "Pendaran jiwa hijau alami. Material tempa rahasia rasi bintang (Drop musuh gaib).",
+    "note": "<karso soul: green><karso shop> <Item Icon: 9>",
+    "price": 0,
+    "itypeId": 2,
+    "scope": 0,
+    "occasion": 3,
+    "speed": 0,
+    "successRate": 100,
+    "repeats": 1,
+    "tpGain": 0,
+    "hitType": 0,
+    "animationId": 41,
+    "consumable": false,
+    "damage": {
+      "type": 0,
+      "elementId": 0,
+      "formula": "0",
+      "variance": 20,
+      "critical": false
+    },
+    "effects": []
+  }
+]

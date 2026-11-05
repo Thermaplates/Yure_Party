@@ -1,0 +1,9 @@
+[
+null,
+{"id":1,"battlerName":"","characterIndex":0,"characterName":"$niatot","classId":1,"equips":[2,1,0,0,0],"faceIndex":0,"faceName":"nia1","traits":[{"code":51,"dataId":3,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Nia","nickname":"Nia","note":"<Desc>Gadis ceria dan berisik</Desc>","profile":""},
+{"id":2,"battlerName":"","characterIndex":0,"characterName":"$Sphitot","classId":1,"equips":[1,0,0,0,0],"faceIndex":0,"faceName":"Sophia","traits":[{"code":43,"dataId":12,"value":1},{"code":51,"dataId":2,"value":1},{"code":43,"dataId":14,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Sophia","nickname":"Sophia","note":"<Desc>Gadis Tsundere </Desc>","profile":""},
+{"id":3,"battlerName":"Saki","characterIndex":0,"characterName":"$Saki","classId":2,"equips":[3,0,0,3,0],"faceIndex":0,"faceName":"Saki","traits":[{"code":23,"dataId":0,"value":4},{"code":13,"dataId":12,"value":1},{"code":22,"dataId":7,"value":0.2},{"code":41,"dataId":2,"value":1},{"code":43,"dataId":13,"value":1},{"code":51,"dataId":3,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Saki","nickname":"Saki","note":"<Passive State:12>\n<Passive State:13>\n<Desc>Gadis pendiam</Desc>\n","profile":""},
+{"id":4,"battlerName":"","characterIndex":0,"characterName":"$Eina","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"Eina","nickname":"Eina","note":"","profile":""},
+{"id":5,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"","nickname":"","note":"","profile":""},
+{"id":6,"battlerName":"","characterIndex":0,"characterName":"$Mbah_Karso_uwu","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"Karso","traits":[],"initialLevel":1,"maxLevel":99,"name":"Mbah Karso","nickname":"Karso","note":"","profile":""}
+]

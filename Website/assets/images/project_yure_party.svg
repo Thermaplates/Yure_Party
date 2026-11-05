@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070b14" />
+      <stop offset="40%" stop-color="#140f2b" />
+      <stop offset="100%" stop-color="#24072f" />
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="70%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#e0e7ff" stop-opacity="0.9" />
+      <stop offset="30%" stop-color="#818cf8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#140f2b" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="goldText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Full Moon & Ghostly Glow -->
+  <circle cx="580" cy="130" r="140" fill="url(#moonGlow)" />
+  <circle cx="580" cy="130" r="65" fill="#f8fafc" opacity="0.95" />
+  <circle cx="550" cy="110" r="15" fill="#e2e8f0" opacity="0.4" />
+  <circle cx="610" cy="145" r="22" fill="#cbd5e1" opacity="0.3" />
+
+  <!-- Haunting Gothic Castle / Manor Silhouettes -->
+  <path d="M0,450 L0,360 L80,360 L80,280 L110,240 L140,280 L140,360 L240,360 L240,220 L270,170 L300,220 L300,360 L450,360 L490,260 L530,360 L800,360 L800,450 Z" fill="#080711" opacity="0.9" />
+  <path d="M380,450 L380,310 L410,240 L440,310 L440,450 Z" fill="#030308" />
+
+  <!-- Ghostly Lanterns & Wisps -->
+  <circle cx="285" cy="245" r="6" fill="#67e8f9" filter="url(#glow)" />
+  <circle cx="425" cy="290" r="8" fill="#ec4899" filter="url(#glow)" />
+  <circle cx="660" cy="280" r="10" fill="#a855f7" filter="url(#glow)" />
+  <circle cx="160" cy="310" r="7" fill="#67e8f9" filter="url(#glow)" />
+
+  <!-- Stylized Spectral Figures -->
+  <path d="M640,290 Q655,270 660,240 Q665,270 680,290 Z" fill="#a855f7" opacity="0.6" filter="url(#glow)" />
+  <path d="M220,330 Q230,310 235,285 Q240,310 250,330 Z" fill="#38bdf8" opacity="0.5" filter="url(#glow)" />
+
+  <!-- Dark Fog Layer -->
+  <rect y="340" width="800" height="110" fill="black" opacity="0.55" />
+
+  <!-- Title & Typography -->
+  <g filter="url(#glow)">
+    <text x="60" y="160" font-family="'Cinzel', 'Playfair Display', serif" font-weight="900" font-size="64" fill="url(#goldText)" letter-spacing="4">
+      YURE PARTY
+    </text>
+  </g>
+  <text x="60" y="200" font-family="'Outfit', sans-serif" font-weight="600" font-size="20" fill="#f43f5e" letter-spacing="3">
+    幽霊パーティー · A DARK ATMOSPHERIC RPG
+  </text>
+  <text x="60" y="240" font-family="'Outfit', sans-serif" font-weight="400" font-size="15" fill="#94a3b8" letter-spacing="1">
+    Original IP by zerobrain studio
+  </text>
+
+  <!-- Tags -->
+  <rect x="60" y="270" width="90" height="26" rx="13" fill="#3b0764" stroke="#c084fc" stroke-width="1.5" />
+  <text x="105" y="287" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#e9d5ff">DARK RPG</text>
+
+  <rect x="160" y="270" width="130" height="26" rx="13" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.5" />
+  <text x="225" y="287" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#c7d2fe">ATMOSPHERIC</text>
+
+  <rect x="300" y="270" width="110" height="26" rx="13" fill="#064e3b" stroke="#34d399" stroke-width="1.5" />
+  <text x="355" y="287" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#a7f3d0">ORIGINAL OST</text>
+</svg>

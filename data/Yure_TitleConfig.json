@@ -1,0 +1,102 @@
+{
+  "canvasColor": "#ffffff",
+  "nia": {
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "opacity": 255,
+    "mode": "black"
+  },
+  "shadow": {
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "opacity": 255
+  },
+  "logoRed": {
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "opacity": 255
+  },
+  "logoWhite": {
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "opacity": 255
+  },
+  "backShadow": {
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "opacity": 255
+  },
+  "redSplash": {
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "opacity": 255,
+    "mode": "dynamic"
+  },
+  "redAcc": {
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "opacity": 255
+  },
+  "cursor": {
+    "x": 0,
+    "y": 0,
+    "scale": 1,
+    "rotation": 0
+  },
+  "prompt": {
+    "text": "PRESS ALL TO CONTINUE",
+    "x": 640,
+    "y": 640,
+    "fontSize": 24,
+    "color": "#ff0066",
+    "fontFace": "GameFont, Montserrat, Arial, sans-serif"
+  },
+  "copyright": {
+    "text": "ZeroBrain Studio©",
+    "x": 28,
+    "y": 692,
+    "fontSize": 15,
+    "color": "#888888"
+  },
+  "commands": {
+    "load": {
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "shiftX": 25,
+      "action": "newGame",
+      "label": "Load / New Game"
+    },
+    "continue": {
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "shiftX": 25,
+      "action": "continue",
+      "label": "Continue"
+    },
+    "option": {
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "shiftX": 25,
+      "action": "options",
+      "label": "Option"
+    },
+    "more": {
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "shiftX": 25,
+      "action": "gallery",
+      "label": "More"
+    }
+  }
+}

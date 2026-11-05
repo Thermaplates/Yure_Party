@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050510" />
+      <stop offset="60%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="cyanPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="50%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="neon">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" rx="16" fill="url(#cyberBg)" />
+  
+  <!-- Perspective Cyber Grid -->
+  <g opacity="0.35" stroke="#00f2fe" stroke-width="1">
+    <line x1="0" y1="450" x2="800" y2="450" />
+    <line x1="0" y1="410" x2="800" y2="410" />
+    <line x1="0" y1="380" x2="800" y2="380" />
+    <line x1="0" y1="360" x2="800" y2="360" />
+    <line x1="0" y1="350" x2="800" y2="350" />
+    
+    <line x1="400" y1="330" x2="0" y2="450" />
+    <line x1="400" y1="330" x2="150" y2="450" />
+    <line x1="400" y1="330" x2="300" y2="450" />
+    <line x1="400" y1="330" x2="400" y2="450" />
+    <line x1="400" y1="330" x2="500" y2="450" />
+    <line x1="400" y1="330" x2="650" y2="450" />
+    <line x1="400" y1="330" x2="800" y2="450" />
+  </g>
+
+  <!-- Glowing Circuit Ring -->
+  <circle cx="580" cy="200" r="120" fill="none" stroke="#ec4899" stroke-width="3" stroke-dasharray="12,8" opacity="0.7" filter="url(#neon)" />
+  <circle cx="580" cy="200" r="90" fill="none" stroke="#00f2fe" stroke-width="2" opacity="0.8" />
+  
+  <!-- Cyber Hexagons -->
+  <polygon points="580,140 632,170 632,230 580,260 528,230 528,170" fill="#0f172a" stroke="#00f2fe" stroke-width="2" filter="url(#neon)" />
+  <text x="580" y="210" text-anchor="middle" font-family="'Courier New', monospace" font-weight="900" font-size="28" fill="#ec4899">ZERO</text>
+
+  <!-- Text -->
+  <g filter="url(#neon)">
+    <text x="60" y="160" font-family="'Outfit', 'Segoe UI', sans-serif" font-weight="900" font-size="52" fill="url(#cyanPink)" letter-spacing="3">
+      PHANTOM ZERO
+    </text>
+  </g>
+  <text x="60" y="200" font-family="'Courier New', monospace" font-weight="700" font-size="18" fill="#38bdf8" letter-spacing="2">
+    CYBERPUNK ACTION DUNGEON CRAWLER
+  </text>
+  <text x="60" y="240" font-family="'Outfit', sans-serif" font-weight="400" font-size="15" fill="#94a3b8">
+    Upcoming Prototype & Fast-Paced Combat Experiment
+  </text>
+
+  <!-- Badges -->
+  <rect x="60" y="270" width="100" height="26" rx="6" fill="#0369a1" stroke="#38bdf8" stroke-width="1.5" />
+  <text x="110" y="287" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#e0f2fe">PROTOTYPE</text>
+
+  <rect x="170" y="270" width="110" height="26" rx="6" fill="#831843" stroke="#f472b6" stroke-width="1.5" />
+  <text x="225" y="287" text-anchor="middle" font-family="'Outfit', sans-serif" font-size="11" font-weight="700" fill="#fce7f3">SYNTHWAVE</text>
+</svg>

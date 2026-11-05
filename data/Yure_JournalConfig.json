@@ -1,0 +1,469 @@
+{
+  "equipIconSize": 32,
+  "slots": [
+    {
+      "id": "acc1",
+      "name": "Accessory I",
+      "etypeId": 5,
+      "slotIndex": 4,
+      "gridX": 0,
+      "gridY": 0,
+      "iconType": "ring",
+      "x": 155,
+      "y": 338
+    },
+    {
+      "id": "souls",
+      "name": "Souls",
+      "etypeId": 1,
+      "slotIndex": 0,
+      "gridX": 1,
+      "gridY": 0,
+      "iconType": "flame",
+      "x": 257,
+      "y": 337
+    },
+    {
+      "id": "acc2",
+      "name": "Accessory II",
+      "etypeId": 5,
+      "slotIndex": 5,
+      "gridX": 2,
+      "gridY": 0,
+      "iconType": "ring",
+      "x": 364,
+      "y": 339
+    },
+    {
+      "id": "seal1",
+      "name": "Seal I",
+      "etypeId": 3,
+      "slotIndex": 2,
+      "gridX": 0,
+      "gridY": 1,
+      "iconType": "scroll",
+      "x": 189,
+      "y": 430
+    },
+    {
+      "id": "seal2",
+      "name": "Seal II",
+      "etypeId": 3,
+      "slotIndex": 6,
+      "gridX": 2,
+      "gridY": 1,
+      "iconType": "scroll",
+      "x": 328,
+      "y": 429
+    },
+    {
+      "id": "cat1",
+      "name": "Spirit Catalyst I",
+      "etypeId": 4,
+      "slotIndex": 3,
+      "gridX": 0,
+      "gridY": 2,
+      "iconType": "flask",
+      "x": 155,
+      "y": 522
+    },
+    {
+      "id": "cat2",
+      "name": "Spirit Catalyst II",
+      "etypeId": 4,
+      "slotIndex": 7,
+      "gridX": 2,
+      "gridY": 2,
+      "iconType": "flask",
+      "x": 365,
+      "y": 524
+    }
+  ],
+  "soulEye": {
+    "x": 252,
+    "y": 159
+  },
+  "anchorWeapon": {
+    "x": 0,
+    "y": 0
+  },
+  "note": {
+    "textX": 69,
+    "titleY": 366,
+    "itemY": 399,
+    "lineYs": [
+      432,
+      464,
+      500,
+      536,
+      568,
+      600
+    ],
+    "statValX": 129,
+    "statBonusX": 189,
+    "hintY": 634
+  },
+  "bars": {
+    "hp": {
+      "x": 300,
+      "y": 101,
+      "w": 172,
+      "h": 20
+    },
+    "mana": {
+      "x": 303,
+      "y": 143,
+      "w": 169,
+      "h": 22
+    },
+    "rage": {
+      "x": 306,
+      "y": 193,
+      "w": 166,
+      "h": 22
+    },
+    "mental": {
+      "x": 306,
+      "y": 237,
+      "w": 166,
+      "h": 23
+    }
+  },
+  "polaroid": {
+    "x": 69,
+    "y": 8
+  },
+  "actorName": {
+    "x": 268,
+    "y": -4
+  },
+  "ribbons": [
+    {
+      "label": "Status",
+      "file": "Status",
+      "y": 37,
+      "unselectedX": 157,
+      "selectedX": 15,
+      "peekX": 15
+    },
+    {
+      "label": "Item",
+      "file": "Item",
+      "y": 122,
+      "unselectedX": 180,
+      "selectedX": 15,
+      "peekX": 15
+    },
+    {
+      "label": "Party",
+      "file": "Party",
+      "y": 205,
+      "unselectedX": 173,
+      "selectedX": 15,
+      "peekX": 15
+    },
+    {
+      "label": "Skills",
+      "file": "Skills_",
+      "y": 287,
+      "unselectedX": 178,
+      "selectedX": 15,
+      "peekX": 15
+    },
+    {
+      "label": "Constellation",
+      "file": "Constellation_",
+      "y": 364,
+      "unselectedX": 170,
+      "selectedX": 15,
+      "peekX": 15
+    },
+    {
+      "label": "Archive",
+      "file": "Archive_",
+      "y": 442,
+      "unselectedX": 159,
+      "selectedX": 15,
+      "peekX": 15
+    },
+    {
+      "label": "Settings",
+      "file": "settings",
+      "y": 524,
+      "unselectedX": 172,
+      "selectedX": 15,
+      "peekX": 15
+    },
+    {
+      "label": "Exit",
+      "file": "Exit",
+      "y": 602,
+      "unselectedX": 153,
+      "selectedX": 15,
+      "peekX": 15
+    }
+  ],
+  "itemJournal": {
+    "grid": {
+      "startX": 52,
+      "startY": 42,
+      "spacingX": 100,
+      "spacingY": 96,
+      "cols": 4,
+      "rows": 6,
+      "slotW": 90,
+      "slotH": 86,
+      "iconSize": 58
+    },
+    "polaroid": {
+      "x": 142,
+      "y": 127,
+      "rotation": -0.148,
+      "photoCX": 118,
+      "photoCY": 105,
+      "photoScale": 2.5,
+      "iconSize": 100
+    },
+    "title": {
+      "x": 277,
+      "nameY": 78,
+      "catY": 106,
+      "subY": 132
+    },
+    "description": {
+      "x": 0,
+      "y": 214,
+      "w": 508,
+      "h": 355,
+      "textX": 40,
+      "textY": 115,
+      "lineHeight": 34,
+      "maxLines": 7
+    }
+  },
+  "skillJournal": {
+    "grid": {
+      "startX": 52,
+      "startY": 44,
+      "spacingX": 100,
+      "spacingY": 96,
+      "cols": 4,
+      "rows": 6,
+      "slotW": 90,
+      "slotH": 86,
+      "iconSize": 87
+    },
+    "polaroid": {
+      "x": 142,
+      "y": 127,
+      "rotation": -0.148,
+      "photoCX": 118,
+      "photoCY": 105,
+      "photoScale": 2.5,
+      "iconSize": 205
+    },
+    "title": {
+      "x": 277,
+      "nameY": 78,
+      "catY": 106,
+      "subY": 132
+    },
+    "description": {
+      "x": 1,
+      "y": 213,
+      "w": 508,
+      "h": 355,
+      "textX": 44,
+      "textY": 115,
+      "lineHeight": 34,
+      "maxLines": 7
+    },
+    "ribbons": {
+      "x": 268,
+      "restingY": 12,
+      "pullY": -35,
+      "y": 21
+    }
+  },
+  "constellationJournal": {
+    "tree": {
+      "x": 43,
+      "y": 18,
+      "w": 422,
+      "h": 613,
+      "file": "Untitled478_20260923104430"
+    },
+    "treeNodes": [
+      {
+        "id": 0,
+        "name": "Root Base",
+        "x": 74,
+        "y": 69,
+        "w": 143,
+        "h": 143,
+        "iconSize": 135
+      },
+      {
+        "id": 1,
+        "name": "Branch 1",
+        "x": 245,
+        "y": 154,
+        "w": 143,
+        "h": 143,
+        "iconSize": 135
+      },
+      {
+        "id": 2,
+        "name": "Branch 2",
+        "x": 75,
+        "y": 258,
+        "w": 143,
+        "h": 143,
+        "iconSize": 135
+      },
+      {
+        "id": 3,
+        "name": "Branch 3",
+        "x": 244,
+        "y": 364,
+        "w": 143,
+        "h": 143,
+        "iconSize": 135
+      },
+      {
+        "id": 4,
+        "name": "Branch 4",
+        "x": 74,
+        "y": 449,
+        "w": 143,
+        "h": 143,
+        "iconSize": 135
+      }
+    ],
+    "romanRibbons": {
+      "x": 236,
+      "y": 520,
+      "w": 229,
+      "h": 205,
+      "files": [
+        "Untitled478_20260923104449",
+        "Untitled478_20260923104447",
+        "Untitled478_20260923104445"
+      ]
+    },
+    "actorCard": {
+      "x": 14,
+      "y": 8,
+      "w": 250,
+      "h": 150
+    },
+    "categoryRibbons": {
+      "startX": 295,
+      "y": 4,
+      "spacing": 70,
+      "w": 49,
+      "h": 157,
+      "files": [
+        "Attack",
+        "Defends",
+        "Special"
+      ]
+    },
+    "grid": {
+      "startX": 12,
+      "startY": 146,
+      "cols": 4,
+      "rows": 5,
+      "spacingX": 122,
+      "spacingY": 98,
+      "slotW": 108,
+      "slotH": 92,
+      "iconSize": 76
+    }
+  },
+  "archiveJournal": {
+    "hub": {
+      "memories": {
+        "x": 25,
+        "y": 25,
+        "w": 458,
+        "h": 618
+      },
+      "notes": {
+        "x": 25,
+        "y": 25,
+        "w": 458,
+        "h": 618
+      }
+    },
+    "gallery": {
+      "leftSlots": [
+        {
+          "x": 30,
+          "y": 45,
+          "w": 215,
+          "h": 265
+        },
+        {
+          "x": 260,
+          "y": 45,
+          "w": 215,
+          "h": 265
+        },
+        {
+          "x": 30,
+          "y": 340,
+          "w": 215,
+          "h": 265
+        },
+        {
+          "x": 260,
+          "y": 340,
+          "w": 215,
+          "h": 265
+        }
+      ],
+      "rightSlots": [
+        {
+          "x": 30,
+          "y": 45,
+          "w": 215,
+          "h": 265
+        },
+        {
+          "x": 260,
+          "y": 45,
+          "w": 215,
+          "h": 265
+        },
+        {
+          "x": 30,
+          "y": 340,
+          "w": 215,
+          "h": 265
+        },
+        {
+          "x": 260,
+          "y": 340,
+          "w": 215,
+          "h": 265
+        }
+      ]
+    },
+    "logs": {
+      "list": {
+        "x": 20,
+        "y": 40,
+        "w": 468,
+        "rowH": 68,
+        "visibleRows": 7
+      },
+      "detail": {
+        "x": 20,
+        "y": 40,
+        "w": 468,
+        "h": 580
+      }
+    }
+  }
+}

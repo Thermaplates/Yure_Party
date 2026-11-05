@@ -1,0 +1,11 @@
+Add-Type -AssemblyName System.Drawing
+$srcImg = [System.Drawing.Image]::FromFile('img\characters\$nia.png')
+$bmp = New-Object System.Drawing.Bitmap(72, 96)
+$g = [System.Drawing.Graphics]::FromImage($bmp)
+$srcRect = New-Object System.Drawing.Rectangle(72, 0, 72, 96) # Middle column (stand), first row (down)
+$dstRect = New-Object System.Drawing.Rectangle(0, 0, 72, 96)
+$g.DrawImage($srcImg, $dstRect, $srcRect, [System.Drawing.GraphicsUnit]::Pixel)
+$g.Dispose()
+$srcImg.Dispose()
+$bmp.Save('C:\Users\Fauzi\.gemini\antigravity\brain\4473dc3c-d1f4-4e19-a632-c456a523779a\frame_test.png', [System.Drawing.Imaging.ImageFormat]::Png)
+$bmp.Dispose()
