@@ -1,9 +1,8 @@
 #  Yure Party — Cute Supernatural Psychological  RPG
 
 <p align="center">
-  <img src="img/system/pethog2.png" alt="Yure Party Logo"  style="border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
+  <img src="img/system/pethog2.png" alt="Yure Party Logo" width="400" style="border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);" />
 </p>
-
 <p align="center">
   <strong>Misteri Gaib Lokal • Antarmuka Scrapbook Buatan Tangan • Pertarungan Kinetik Refleks • Suara Prosedural Chiptune</strong>
 </p>
